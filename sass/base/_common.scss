@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+textarea{
+  resize: none;
+}
+input{
+  padding: 0px;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text-color);
+  font-family: var(--font-family-main);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
