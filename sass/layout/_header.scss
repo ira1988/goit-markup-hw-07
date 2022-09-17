@@ -2,49 +2,57 @@
 .header {
   border-bottom: 1px solid var(--border-header);
 }
-.logo {
-  color: var(--accent-color);
-  font-family: var(--font-family-logo);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: inherit;
-  display: block;
-}
-.logo-top {
+
+.logo--header {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
+ 
 }
-.logo-header {
-  color: #000000;
+.logo__text{
+     color: #000000;
+
+
+
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__navigation{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
-/* <!-- навігація --> */
-.nav {
-  display: flex;
-  align-items: center;
-}
-.nav-contacts-list,
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-.nav-box {
-  display: flex;
-  align-items: center;
-}
 
-.nav-list-item:not(:last-child),
-.nav-contacts-item:not(:last-child) {
+.nav-list__item:not(:last-child),
+.nav-contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-contacts-list {
-  margin-left: auto;
+
+.nav-list__link{
+    font-family: inherit;
+  font-style: inherit;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  transition: color var(--transition);
+
+&:hover,
+&:focus{
+    color: var(--accent-color);
+}
 }
 
-.nav-link,
-.nav-contacts {
+
+.contacts-list__link{
   font-family: inherit;
   font-style: inherit;
   color: var(--title-color);
@@ -57,38 +65,19 @@
   display: block;
 
   transition: color var(--transition);
-}
-.nav-link:hover,
-.nav-contacts:hover,
-.nav-link:focus,
-.nav-contacts:focus,
-.footer-link:hover,
-.footer-link:focus,
-.current {
+
+
+&:hover,
+&:focus{
   color: var(--accent-color);
 }
-.nav-contacts {
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
+
 }
 
-.nav-contacts-list,
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-
-.icon-envelope,
-.icon-phone {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.nav-link{
-  position: relative;
-}
-
-.current::after {
+.nav-list__current {
+  color: var(--accent-color);
+  
+&::after {
   position: absolute;
   bottom: 0;
   left:0;
@@ -99,5 +88,23 @@ margin-bottom: -1px;
   background-color: var(--accent-color);
  
   transition: background var(--transition);
+}
+}
 
+
+.nav-list__link {
+  position: relative;
+}
+
+
+.contacts-list__link{
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+
+.contacts-list__icon{
+  margin-right: 10px;
+  fill: currentColor;
 }

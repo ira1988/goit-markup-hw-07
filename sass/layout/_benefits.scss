@@ -1,20 +1,15 @@
 
-.our-benefits {
+.benefits {
   padding-top: 94px;
 }
 
-.benefits-list {
-  display: flex;
-}
-.benefits-item:not(:last-child),
-.work-item:not(:last-child),
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-.benefits-item {
+
+
+
+.benefits-list__item {
   flex-basis: calc(100% - 90px / 4);
 }
-.benefits-title {
+.benefits-list__name {
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
@@ -22,7 +17,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.benefit-background {
+.background {
   display: flex;
   background-color: var(--team-color);
   height: 120px;
@@ -30,7 +25,7 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.icon-benefit {
+.background__icon {
   width: 65px;
   height: 70px;
 }
