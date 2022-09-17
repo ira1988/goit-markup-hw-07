@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -674,6 +675,7 @@ footer {
   opacity: 0;
   pointer-events: none;
 }
+
 .is-hidden .modal {
   transform: scale(0);
 }
@@ -711,6 +713,7 @@ footer {
   fill: var(--accent-color);
 }
 
+/* форми */
 .modal-text {
   font-weight: 700;
   font-size: 20px;
@@ -730,6 +733,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .form-field:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -748,7 +752,10 @@ footer {
   outline: none;
   cursor: pointer;
 }
-.form-input:focus {
+
+.form-input:focus,
+.text-area:focus {
+  outline: none;
   border-color: var(--accent-color);
 }
 
@@ -765,6 +772,7 @@ footer {
   fill: #212121;
   transition: fill var(--transition), transform var(--transition);
 }
+
 .form-input:focus + .icon-input {
   fill: var(--accent-color);
 }
@@ -791,10 +799,7 @@ footer {
   padding: 12px 16px;
   outline: none;
 }
-.text-area:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+
 .text-area::placeholder {
   font-size: 12px;
   line-height: 14px;
@@ -820,33 +825,6 @@ footer {
   margin-bottom: 30px;
 }
 
-.policy-link {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-
-.button-form {
-  width: 200px;
-  height: 50px;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  padding: 10px 52px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background var(--transition);
-}
-.button-form:hover, .button-form:focus {
-  background-color: var(--button-active);
-}
-
-.checkbox-lable {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .custom-checkbox {
   width: 16px;
   height: 15px;
@@ -860,16 +838,42 @@ footer {
   display: none;
 }
 
-.checkbox-origin {
-  appearance: none;
-}
 .checkbox-origin:checked + .custom-checkbox {
   border: solid var(--accent-color);
   background-color: var(--accent-color);
 }
+
+.checkbox-origin:checked + .custom-checkbox .custom-checkbox-icon {
+  display: block;
+}
+
 .checkbox-origin:focus + .custom-checkbox {
   box-shadow: 0 0 0 1px var(--accent-color);
 }
-.checkbox-origin:checked + .custom-checkbox-icon {
+
+.checkbox-origin {
+  appearance: none;
+}
+
+.send-button {
+  width: 200px;
+  height: 50px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #FFFFFF;
+  padding: 10px 52px;
+  border: none;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background var(--transition);
+}
+
+.send-button:hover .send-button:focus {
+  background-color: var(--button-active);
 }/*# sourceMappingURL=main.css.map */
