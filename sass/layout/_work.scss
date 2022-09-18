@@ -4,7 +4,8 @@
 }
 
 .work-list{
- @extend%align
+ @extend%align;
+ gap:30px;
 }
 .work-list__item {
   position: relative;

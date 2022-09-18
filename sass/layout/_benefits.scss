@@ -7,6 +7,7 @@
  .benefits-list{
  @extend %align;
  align-items:flex-start;
+ gap: 30px;
  }
 
 .benefits-list__item {

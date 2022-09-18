@@ -4,7 +4,8 @@
 }
 
 .clients-list{
-@extend%align
+@extend%align;
+gap:30px;
 }
 .clients-list__link {
   display: flex;

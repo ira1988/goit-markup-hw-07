@@ -1,15 +1,22 @@
 @import"./base/modern-normalize";
-@import"./base/reset";
 @import"./utils/variables.scss";
-@import"./utils/placeholders";
+@import"./utils/mixin";
+@import"./base/reset";
 
-@import"./components/body";
-@import"./components/visually-hidden";
-@import"./components/container";
+
+@import"./common/body";
+@import"./common/container";
+@import"./common/visually-hidden";
+@import"./common/title";
+@import"./common/social";
+
+
 @import"./components/logo";
 @import"./components/button";
-@import"./components/title";
-@import"./components/social";
+
+
+@import"./utils/placeholders";
+@import"./utils/mixin";
 
 @import"./layout/header";
 @import"./layout/hero";
