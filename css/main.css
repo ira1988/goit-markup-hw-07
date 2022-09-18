@@ -66,6 +66,13 @@ input {
   --benefits-background-color: #F5F4FA;
 }
 
+.gallery-list, .button-list, .clients-list, .team-list, .work-list, .benefits-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
 body {
   background-color: var(--white);
   color: var(--text-color);
@@ -107,6 +114,7 @@ body {
 
 .button {
   padding: 0;
+  min-width: 200px;
   height: 50px;
   display: block;
   margin-left: auto;
@@ -304,9 +312,7 @@ body {
 }
 
 .benefits-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  align-items: flex-start;
 }
 
 .benefits-list__item {
@@ -341,13 +347,6 @@ body {
   padding-bottom: 94px;
 }
 
-.work-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
 .work-list__item {
   position: relative;
   width: 370px;
@@ -376,13 +375,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--team-section-color);
-}
-
-.team-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
 }
 
 .team-list__item {
@@ -429,13 +421,6 @@ body {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.clients-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
 }
 
 .clients-list__link {
@@ -584,15 +569,9 @@ footer {
   padding-bottom: 94px;
 }
 
-.button-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .button-list {
-  display: flex;
-  align-items: center;
+  gap: 8px;
   margin-bottom: 50px;
-  justify-content: center;
 }
 
 .button-list__buttons {
@@ -617,10 +596,6 @@ footer {
 
 .gallery-list {
   flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
 }
 
 .portfolio-gal__item {

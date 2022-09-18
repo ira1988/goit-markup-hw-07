@@ -5,10 +5,8 @@
 
 
  .benefits-list{
-   display: flex;
- 
-  justify-content: center;
-   gap: 30px;
+ @extend %align;
+ align-items:flex-start;
  }
 
 .benefits-list__item {

@@ -2,15 +2,13 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.button-list__item:not(:last-child){
-  margin-right: 8px;
-}
+
 
 .button-list {
-  display: flex;
-  align-items: center;
+@extend%align;
+  gap: 8px;
   margin-bottom: 50px;
-  justify-content: center;
+
 }
 .button-list__buttons{
   font-family: inherit;
@@ -44,11 +42,9 @@ color var(--transition),
 
 
 .gallery-list{
+   @extend%align;
   flex-wrap: wrap;
-   display: flex;
-  align-items: center;
-  justify-content: center;
-   gap: 30px;
+ 
 }
 .portfolio-gal__item{
   flex-basis: calc(100% / 3 - 60px);

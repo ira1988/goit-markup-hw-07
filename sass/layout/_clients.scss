@@ -4,10 +4,7 @@
 }
 
 .clients-list{
- display: flex;
-  align-items: center;
-  justify-content: center;
-   gap: 30px;
+@extend%align
 }
 .clients-list__link {
   display: flex;
