@@ -4,7 +4,12 @@
 }
 
 
-
+ .benefits-list{
+   display: flex;
+ 
+  justify-content: center;
+   gap: 30px;
+ }
 
 .benefits-list__item {
   flex-basis: calc(100% - 90px / 4);
@@ -19,7 +24,7 @@
 }
 .background {
   display: flex;
-  background-color: var(--team-color);
+  background-color: var(--benefits-background-color);
   height: 120px;
   align-items: center;
   justify-content: center;

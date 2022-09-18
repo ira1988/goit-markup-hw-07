@@ -3,6 +3,12 @@
   padding-bottom: 94px;
 }
 
+.work-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 30px;
+}
 .work-list__item {
   position: relative;
 width: 370px;

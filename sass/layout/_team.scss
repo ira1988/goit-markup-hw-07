@@ -4,6 +4,14 @@
   background-color: var( --team-section-color);
 }
 
+.team-list{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 30px;
+}
+
+
 .team-list__item {
   background-color:var(--team-list-color) ;
   text-align: center;

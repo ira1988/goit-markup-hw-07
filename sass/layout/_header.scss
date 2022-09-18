@@ -25,6 +25,13 @@
   margin-right: auto;
 }
 
+.nav-list{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 30px;
+
+}
 
 .nav-list__item:not(:last-child),
 .nav-contacts-list__item:not(:last-child) {
@@ -96,6 +103,13 @@ margin-bottom: -1px;
   position: relative;
 }
 
+
+.contacs-list {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 30px;
+}
 
 .contacts-list__link{
   color: var(--text-color);

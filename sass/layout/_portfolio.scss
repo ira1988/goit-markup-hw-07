@@ -45,6 +45,10 @@ color var(--transition),
 
 .gallery-list{
   flex-wrap: wrap;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 30px;
 }
 .portfolio-gal__item{
   flex-basis: calc(100% / 3 - 60px);

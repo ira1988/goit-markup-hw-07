@@ -2,10 +2,13 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.list--gap {
-  gap: 30px;
-}
 
+.clients-list{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 30px;
+}
 .clients-list__link {
   display: flex;
   justify-content: center;
