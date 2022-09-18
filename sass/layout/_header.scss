@@ -26,9 +26,7 @@
 }
 
 .nav-list{
-   display: flex;
-  align-items: center;
-  justify-content: center;
+@extend%align;
    gap: 30px;
 
 }
@@ -60,17 +58,17 @@
 
 
 .contacts-list__link{
+   display: block;
   font-family: inherit;
   font-style: inherit;
   color: var(--title-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+
+  @include font( 14px, 500, 1.14);
   letter-spacing: 0.02em;
+
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
-
+ 
   transition: color var(--transition);
 
 
@@ -105,9 +103,7 @@ margin-bottom: -1px;
 
 
 .contacs-list {
- display: flex;
-  align-items: center;
-  justify-content: center;
+@extend%align;
    gap: 30px;
 }
 

@@ -12,9 +12,7 @@
 }
 .button-list__buttons{
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font( 16px, 500, 1.62);
   letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: #f5f4fa;
@@ -43,9 +41,7 @@ color var(--transition),
 
 .gallery-list{
   flex-wrap: wrap;
-   display: flex;
-  align-items: center;
-  justify-content: center;
+@extend%align;
    gap: 30px;
 }
 .portfolio-gal__item{
@@ -68,9 +64,8 @@ color var(--transition),
 }
 
 .gallery-list__title{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font( 18px, 700, 2);
+
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
@@ -84,9 +79,8 @@ color var(--transition),
 }
 
 .gallery-list__overlay-text{
+@include font(18px, 400, 1.56);
 
-  font-size: 18px;
-  line-height: 1.56;
   color: var(--portfolio-description-text);
 }
 .gallery-list__overlay-box{

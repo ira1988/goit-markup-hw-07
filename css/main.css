@@ -6,6 +6,7 @@
   --white: #ffffff;
   --team-section-color: #f5f4fa;
   --team-list-color:#fff;
+  --button-text-color:#fff;
   --button-active: #188ce8;
   --hero-bcc: #c4c4c4;
   --font-family-main: "Roboto", sans-serif;
@@ -123,13 +124,13 @@ body {
 }
 
 .logo {
+  display: inline-block;
   color: var(--accent-color);
   font-family: var(--font-family-logo);
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: inherit;
-  display: inline-block;
 }
 
 .button {
@@ -139,11 +140,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 0.06em;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
-  color: #FFFFFF;
+  color: var(--button-text-color);
   border: none;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -154,7 +154,7 @@ body {
   background-color: var(--button-active);
 }
 
-.button-list, .clients-list, .team-list, .work-list, .benefits-list, .social-list, .social-list__link {
+.close-modal, .backdrop, .gallery-list, .button-list, .button_flex, .clients-list__link, .clients-list, .team-list, .work-list__overlay, .work-list, .benefits-list, .contacs-list, .nav-list, .social-list, .social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,9 +186,6 @@ body {
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
@@ -215,16 +212,16 @@ body {
 }
 
 .contacts-list__link {
+  display: block;
   font-family: inherit;
   font-style: inherit;
   color: var(--title-color);
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
   transition: color var(--transition);
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
@@ -251,9 +248,6 @@ body {
 }
 
 .contacs-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
@@ -286,8 +280,8 @@ body {
 }
 
 .hero__title {
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -316,8 +310,8 @@ body {
 
 .benefits-list__name {
   color: var(--title-color);
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -355,15 +349,13 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .work-list__name {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -400,8 +392,8 @@ body {
 }
 
 .position__name {
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.18;
   color: var(--title-color);
   margin-bottom: 10px;
@@ -431,9 +423,6 @@ body {
 }
 
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--link-color);
@@ -497,9 +486,9 @@ footer {
 
 .footer-social__text {
   font-family: "Roboto";
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
@@ -534,8 +523,8 @@ footer {
 }
 
 .subscribe__text {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--subscribe__text-color);
@@ -553,12 +542,6 @@ footer {
 }
 .subscribe__input::placeholder {
   padding: 15px 16px;
-}
-
-.button_flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .button_padding-subscribe {
@@ -583,8 +566,8 @@ footer {
 
 .button-list__buttons {
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -603,9 +586,6 @@ footer {
 
 .gallery-list {
   flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
@@ -624,8 +604,8 @@ footer {
 }
 
 .gallery-list__title {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
@@ -642,6 +622,7 @@ footer {
 
 .gallery-list__overlay-text {
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   color: var(--portfolio-description-text);
 }
@@ -681,9 +662,6 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   z-index: 99;
@@ -717,9 +695,6 @@ footer {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -736,8 +711,8 @@ footer {
 
 /* форми */
 .modal-text {
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   text-align: center;
   color: var(--title-color);
@@ -773,10 +748,7 @@ footer {
   outline: none;
   cursor: pointer;
 }
-
-.form-input:focus,
-.text-area:focus {
-  outline: none;
+.form-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -793,7 +765,6 @@ footer {
   fill: #212121;
   transition: fill var(--transition), transform var(--transition);
 }
-
 .form-input:focus + .icon-input {
   fill: var(--accent-color);
 }
@@ -820,16 +791,21 @@ footer {
   padding: 12px 16px;
   outline: none;
 }
-
+.text-area:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
 .text-area::placeholder {
   font-size: 12px;
-  line-height: 14px;
+  font-weight: 400;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-label {
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
@@ -846,6 +822,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.checkbox-origin {
+  appearance: none;
+}
+
 .custom-checkbox {
   width: 16px;
   height: 15px;
@@ -854,26 +834,19 @@ footer {
   border-radius: 2px;
   cursor: pointer;
 }
-
-.custom-checkbox-icon {
-  display: none;
-}
-
 .checkbox-origin:checked + .custom-checkbox {
   border: solid var(--accent-color);
   background-color: var(--accent-color);
 }
-
-.checkbox-origin:checked + .custom-checkbox .custom-checkbox-icon {
-  display: block;
-}
-
 .checkbox-origin:focus + .custom-checkbox {
   box-shadow: 0 0 0 1px var(--accent-color);
 }
 
-.checkbox-origin {
-  appearance: none;
+.custom-checkbox-icon {
+  display: none;
+}
+.checkbox-origin:checked + .custom-checkbox .custom-checkbox-icon {
+  display: block;
 }
 
 .button_padding-send {
